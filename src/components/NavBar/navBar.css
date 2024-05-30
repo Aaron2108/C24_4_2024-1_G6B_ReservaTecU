@@ -1,0 +1,9 @@
+.hamburguesa{
+    position: relative;
+    right: 45%;
+    top: 20%;
+    width: 50px;
+}
+.icon{
+    font-size: 3rem;
+}
