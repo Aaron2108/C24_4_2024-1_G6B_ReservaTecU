@@ -1,17 +1,54 @@
+import Footer from "../Footer";
 import Header from "../NavBar/Header"
 import './inicio.css';
+import { Carousel } from 'react-bootstrap';
 const Inicio = () => {
   return (
     <div className="div_inicio_Admin">
         <Header/>
-        <section className="section2_gestion_reservas">
-        <article className="article_gestion_reservas">
-            <img className="img_crear_reserva" src="/img/campo1.png" alt="" />
-            <section className="section_campos">
-                <h2>Campo 1</h2>
-            </section>
-        </article>
-      </section>
+
+        <section className="section_Carrusel">
+        <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel">
+      <div className="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div className="carousel-inner">
+        <div className="carousel-item active">
+          <img src="/img/campo1.png" className="d-block w-100 img_carrusel" alt="First slide" />
+          <div className="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div className="carousel-item">
+          <img src="/img/bdSports.jpg" className="d-block w-100 img_carrusel" alt="Second slide" />
+          <div className="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div className="carousel-item">
+          <img src="/img/bdSports.jpg" className="d-block w-100 img_carrusel" alt="Third slide" />
+          <div className="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span className="visually-hidden">Previous</span>
+      </button>
+      <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+        <span className="visually-hidden">Next</span>
+      </button>
+    </div>
+        </section>
+
+    <Footer/>
     </div>
   )
 }

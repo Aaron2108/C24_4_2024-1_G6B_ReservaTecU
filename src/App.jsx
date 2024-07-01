@@ -4,6 +4,8 @@ import ProtectRoute from './components/ProtectRoute'
 import LoginPages from './pages/LoginPages'
 import { useState } from 'react'
 import InicioPage from './pages/InicioPage'
+import RegisterPage from './pages/RegisterPage'
+import PerfilPage from './pages/PerfilPage'
 
 function App() {
 
@@ -16,6 +18,8 @@ function App() {
                             {/*Rutas Protegidas*/}
       {/* <Route element={<ProtectRoute users={users}/>}>  */}
       <Route path='/inicio' element={<InicioPage redirectTo="/login"/>} />
+      <Route path='/register' element={<RegisterPage redirectTo="/login"/>} />
+      <Route path='/perfil' element={<PerfilPage redirectTo="/login"/>} />
       {/* </Route> */}
                             {/*Rutas Protegidas*/}  
 

@@ -41,3 +41,15 @@
 .section_campos h2{
     text-decoration: underline;
 }
+.img_carrusel{
+    height: 600px;
+    max-width: 100%;
+}
+.section_Carrusel{
+    width: 100%;
+    position: relative;
+    top: -20px;
+}
+.footer_total{
+    position: relative;
+}
